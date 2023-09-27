@@ -46,4 +46,9 @@ public class EntidadadesTest {
           Perro perro = new Perro();
           assertTrue(perro instanceof Animal);
       }
+      
+      @Test
+      public void perroTest() {
+          
+      }
 }
