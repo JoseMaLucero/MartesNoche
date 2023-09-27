@@ -5,6 +5,7 @@
 package BasicTests;
 
 import com.jml.martesnochegithub.Animal;
+import com.jml.martesnochegithub.Gato;
 import com.jml.martesnochegithub.Perro;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
@@ -12,6 +13,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Disabled;
 
 /**
  *
@@ -49,6 +51,29 @@ public class EntidadadesTest {
       
       @Test
       public void perroTest() {
-          
+          String name = "Cachito";
+          Perro perro = new Perro(name);
+          String expectedOutput = "Soy un objeto tipo "+perro.getClass().getName()+" y mi nombre es: "+name;
+          assertEquals(expectedOutput,perro.toString());
       }
+      
+      
+      /* 
+      // Enable this to pass the creational test 
+      @Disabled
+      @Test
+      public void gatoTest() {
+          Gato gato = new Gato();
+          assertTrue(gato instanceof Animal);
+      }
+      
+      // Enable this to pass the creational test
+      @Test
+      public void gatoToStringTest() {
+          String name = "michi";
+          Gato gato = new Gato(name);
+          String expectedOutput = "Soy un objeto del tipo "+gato.getClass().getName()+" y mi nombre es: "+name;
+      }
+      
+      */
 }
