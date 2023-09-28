@@ -8,7 +8,7 @@ ltpipeline {
                 * using `true` to allow the Pipeline to continue nonetheless
                 */
                 sh 'make check || true' 
-                junit '**/target/results.xml' 
+                junit '**/target/surefire-reports/*.xml' 
             }
         }
     }
