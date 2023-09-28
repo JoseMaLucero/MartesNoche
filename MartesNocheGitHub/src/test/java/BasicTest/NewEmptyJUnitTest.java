@@ -4,6 +4,7 @@
  */
 package BasicTest;
 
+import com.jml.martesnochegithub.Perro;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -36,9 +37,11 @@ public class NewEmptyJUnitTest {
     public void tearDown() {
     }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
+     @Test
+      public void perroTest() {
+          String name = "Cachito";
+          Perro perro = new Perro(name);
+          String expectedOutput = "Soy un objeto tipo "+perro.getClass().getName()+" y mi nombre es: "+name;
+          assertEquals(null,perro.toString());
+      }
 }
