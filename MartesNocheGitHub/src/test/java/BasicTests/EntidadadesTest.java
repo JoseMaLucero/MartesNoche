@@ -7,6 +7,7 @@ package BasicTests;
 import com.jml.martesnochegithub.Animal;
 import com.jml.martesnochegithub.Gato;
 import com.jml.martesnochegithub.Perro;
+import java.util.logging.Logger;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -14,6 +15,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Disabled;
+import org.junit.platform.commons.logging.LoggerFactory;
 
 /**
  *
@@ -23,6 +25,8 @@ public class EntidadadesTest {
     
     public EntidadadesTest() {
     }
+    
+  
     
     @BeforeAll
     public static void setUpClass() {
