@@ -54,10 +54,7 @@ public class BasicTestsJenkins {
       }
       
       @Test
-      public void perroTest() {
-          String name = "Cachito";
-          Perro perro = new Perro(name);
-          String expectedOutput = "Soy un objeto tipo "+perro.getClass().getName()+" y mi nombre es: "+name;
+      public void perroTest() {eawfo.getClass().getName()+" y mi nombre es: "+name;
           assertEquals(null,perro.toString());
       }
       
