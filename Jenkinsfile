@@ -1,20 +1,15 @@
 pipeline {
     agent any
+
     stages {
-        stage('Checkout') {
+        stage('Test') {
             steps {
-                checkout scm
+                /* `make check` returns non-zero on test failures,
+                * using `true` to allow the Pipeline to continue nonetheless
+                */
+                sh 'make check || true' 
+                junit '**/target/*.xml' 
             }
-        }
-        stage('Build and Test') {
-            steps {
-                sh 'mvn clean test'
-            }
-        }
-    }
-    post {
-        always {
-            junit '**/target/test-classes/*.xml'
         }
     }
 }
