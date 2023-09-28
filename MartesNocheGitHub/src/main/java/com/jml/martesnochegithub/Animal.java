@@ -20,6 +20,6 @@ public abstract class Animal {
         
     @Override 
     public String toString() {
-        return "Hello i am a "+ this.getClass().getName()+" y me llamo "+nombre;
+        return "Hello i am a "+ this.getClass().getSimpleName()+" y me llamo "+nombre;
     }
 }
