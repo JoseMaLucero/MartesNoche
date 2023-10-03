@@ -14,7 +14,10 @@ public abstract class Animal {
     protected Animal() {
         
     }
-
+protected Animal(String nombre) {
+    this.nombre= nombre;
+        
+    }
     public Raza getRaza() {
         return raza;
     }
