@@ -10,12 +10,19 @@ package com.jml.martesnochegithub;
  */
 public abstract class Animal {
     protected String nombre;
-    protected String raza;
+    protected Enum raza;
     protected Animal() {
         
     }
-    
-    
+
+    public String getRaza() {
+        return raza;
+    }
+
+    public void setRaza(Enum raza) {
+        this.raza = raza;
+    }
+
     // Lucas tirate un constructor, un getter y setter para la raza
     // que tiene que ser enumerable Raza.[Collie, entre otras]
     // Juan se encarga de hacer el propio enumerable
@@ -23,7 +30,9 @@ public abstract class Animal {
         this.nombre = nombre;
         this.raza = raza;
     }
-        
+
+    //¿Y el constructor de nombre? ¿Eh?
+
     @Override 
     public String toString() {
         return "Hello i am a "+ this.getClass().getSimpleName()+" y me llamo "+nombre;
