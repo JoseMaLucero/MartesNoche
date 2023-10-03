@@ -15,6 +15,10 @@ public abstract class Animal {
         
     }
     
+    
+    // Lucas tirate un constructor, un getter y setter para la raza
+    // que tiene que ser enumerable Raza.[Collie, entre otras]
+    // Juan se encarga de hacer el propio enumerable
     protected Animal (String nombre) {
         this.nombre = nombre;
         this.raza = raza;
