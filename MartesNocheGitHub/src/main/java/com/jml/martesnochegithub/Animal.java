@@ -10,7 +10,7 @@ package com.jml.martesnochegithub;
  */
 public abstract class Animal {
     protected String nombre;
-    protected Enum raza;
+    protected Raza raza;
     protected Animal() {
         
     }
@@ -31,7 +31,7 @@ public abstract class Animal {
         this.raza = raza;
     }
 
-    //¿Y el constructor de nombre? ¿Eh?
+    //Â¿Y el constructor de nombre? Â¿Eh?
 
     @Override 
     public String toString() {
