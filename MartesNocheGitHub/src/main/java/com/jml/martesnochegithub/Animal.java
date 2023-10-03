@@ -15,7 +15,7 @@ public abstract class Animal {
         
     }
 
-    public String getRaza() {
+    public Raza getRaza() {
         return raza;
     }
 
