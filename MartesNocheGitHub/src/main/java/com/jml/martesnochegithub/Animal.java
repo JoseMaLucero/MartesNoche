@@ -10,12 +10,14 @@ package com.jml.martesnochegithub;
  */
 public abstract class Animal {
     protected String nombre;
+    protected String raza;
     protected Animal() {
         
     }
     
     protected Animal (String nombre) {
         this.nombre = nombre;
+        this.raza = raza;
     }
         
     @Override 
