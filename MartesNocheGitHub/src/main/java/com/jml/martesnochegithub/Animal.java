@@ -19,14 +19,14 @@ public abstract class Animal {
         return raza;
     }
 
-    public void setRaza(Enum raza) {
+    public void setRaza(Raza raza) {
         this.raza = raza;
     }
 
     // Lucas tirate un constructor, un getter y setter para la raza
     // que tiene que ser enumerable Raza.[Collie, entre otras]
     // Juan se encarga de hacer el propio enumerable
-    protected Animal (String nombre, Enum raza) {
+    protected Animal (String nombre, Raza raza) {
         this.nombre = nombre;
         this.raza = raza;
     }
