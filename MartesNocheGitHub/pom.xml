@@ -6,7 +6,7 @@
     <version>beta</version>
     <packaging>jar</packaging>
     <dependencies>
-        
+         
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
