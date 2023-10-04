@@ -48,7 +48,7 @@ public class PajaritoTest {
     
     //
       @Test
-      public void pajaritoT2est() {
+      public void pajariT2est() {
           Pajarito pajarito = new Pajarito();
           assertFalse(pajarito instanceof Animal);
       }
