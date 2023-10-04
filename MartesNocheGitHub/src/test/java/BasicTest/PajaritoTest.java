@@ -63,6 +63,11 @@ public class PajaritoTest {
         Pajarito pajarito = new Pajarito();
         assertFalse(pajarito instanceof Animal);
     }
+     @Test
+    public void newPajaritoTEss6t() {
+        Pajarito pajarito = new Pajarito();
+        assertFalse(pajarito instanceof Animal);
+    }
 
 
 }
