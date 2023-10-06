@@ -50,13 +50,13 @@ public class PajaritoTest {
       @Test
       public void pajariTt() {
           Pajarito pajarito = new Pajarito();
-          assertFalse(pajarito instanceof Animal);
+          assertTrue(pajarito instanceof Animal);
       }
 
   @Test
       public void pajariT2est() {
           Pajarito pajarito = new Pajarito();
-          assertFalse(pajarito instanceof Animal);
+          assertTrue(pajarito instanceof Animal);
       }
 
 }
