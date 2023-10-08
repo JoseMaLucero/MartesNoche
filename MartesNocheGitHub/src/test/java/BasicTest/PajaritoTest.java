@@ -46,18 +46,17 @@ public class PajaritoTest {
     public void tearDown() {
     }
     
-    
+    //
       @Test
-      public void pajaritoTest() {
+      public void pajariTt() {
           Pajarito pajarito = new Pajarito();
           assertTrue(pajarito instanceof Animal);
       }
 
-      @Test
-      public void newPajaritoTEst() {
+  @Test
+      public void pajariT2est() {
           Pajarito pajarito = new Pajarito();
           assertTrue(pajarito instanceof Animal);
       }
-      
-      
+
 }

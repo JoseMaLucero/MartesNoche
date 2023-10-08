@@ -16,9 +16,9 @@ import static org.junit.jupiter.api.Assertions.*;
  *
  * @author jmlucero
  */
-public class NewEmptyJUnitTest {
+public class TestVacio {
     
-    public NewEmptyJUnitTest() {
+    public TestVacio() {
     }
     
     @BeforeAll
