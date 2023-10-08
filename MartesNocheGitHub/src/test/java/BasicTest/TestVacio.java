@@ -43,5 +43,6 @@ public class TestVacio {
           Perro perro = new Perro(name);
           String expectedOutput = "Hello i am a "+perro.getClass().getSimpleName()+" y me llamo "+name;
           assertTrue(expectedOutput,perro.toString());
+          assertFalse(expectedOutput,perro.toString()); //
       }
 }
