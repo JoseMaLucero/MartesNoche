@@ -42,7 +42,7 @@ public class TestVacio {
           String name = "Cachito";
           Perro perro = new Perro(name);
           String expectedOutput = "Hello i am a "+perro.getClass().getSimpleName()+" y me llamo "+name;
-         assertFalse(expectedOutput,perro.toString()); // casdfsdsdsdfsdffsdfdvsdasdasdasaddfjy dasdfas465454cac464
+         assertFalse(expectedOutput,perro.toString()); // casdfsdsdssdsdfsdffsdfdvsdasdasdasaddfjy dasdfas465454cac464
 
       }
 }
