@@ -38,7 +38,7 @@ public class TestVacio {
     }
 
      @Test
-      public void perroTest() {
+      public void nuevoTestVacioTest() {
           String name = "Cachito";
           Perro perro = new Perro(name);
           String expectedOutput = "Hello i am a "+perro.getClass().getSimpleName()+" y me llamo "+name;
